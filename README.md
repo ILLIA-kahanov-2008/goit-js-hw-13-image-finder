@@ -1,3 +1,6 @@
+#homework-13-js
+https://illia-kahanov-2008.github.io/goit-js-hw-13-image-finder/
+
 <!-- Критерии приема
 Созданы репозитории goit-js-hw-13-image-finder.
 При сдаче домашней работы есть две ссылки для каждого проекта: на исходные файлы и рабочую страницу на GitHub pages.
