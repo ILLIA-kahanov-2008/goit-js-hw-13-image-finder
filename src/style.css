@@ -1,0 +1,30 @@
+.search-form {
+  position: fixed;
+}
+
+.gallery {
+  display: flex;
+  max-width: 80%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-left: 0;
+  list-style: none;
+}
+/* .gallery__item {
+  flex-basis: ;
+} */
+
+img {
+
+  width: 240px;
+  height: 160px;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+.material-icons {
+  font-size: 12px;
+}
