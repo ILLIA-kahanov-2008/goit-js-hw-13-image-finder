@@ -9,16 +9,54 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
-    />    
+    />
+    <link rel="stylesheet" href="../node_modules/basiclightbox/dist/basicLightbox.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   </head>
   <body>
-    <form class="search-form" id="search-form">
-      <input type="text" name="query" autocomplete="off" placeholder="Search images..." />
-    </form>
-    <ul class="gallery">      
-    </ul>
-    <button class="load-more-btn">Load more</button>
+    <div class="container">
+      <div class="gallery-options">
+        <label for="image-type" class="gallery-options__item"
+          >Choice image type
+          <select name="image-type" id="image-type">
+            <option value="all">all</option>
+            <option value="photo">photo</option>
+            <option value="illustration">illustration</option>
+            <option value="vector">vector</option>
+          </select>
+        </label>
+        <label for="orientation" class="gallery-options__item"
+          >Choice image orientation
+          <select name="orientation" id="image-orientation">
+            <option value="all">all</option>
+            <option value="horizontal">horizontal</option>
+            <option value="vertical">vertical</option>
+          </select>
+        </label>
+        <label for="images-per-page" class="gallery-options__item"
+          >Number images per page
+          <input
+            type="number"
+            name="images-per-page"
+            autocomplete="off"
+            value="12"
+            placeholder="Enter number"
+          />
+        </label>
+        <form class="search-form gallery-options__item" id="search-form">
+         Insert search query
+          <input
+            class="search-form__item"
+            type="text"
+            name="query"
+            autocomplete="off"
+            placeholder="Search images..."
+          />
+        </form>
+      </div>
+    </div>
+    <ul class="gallery"></ul>
+    <button class="load-more-btn">Load More</button>
 
     <script src="./index.js"></script>
   </body>

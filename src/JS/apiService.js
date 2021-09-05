@@ -3,8 +3,8 @@ const MY_KEY = "23141283-b767010b5d5526766e0fab830";
 
 import axios from 'axios';
 axios.defaults.baseURL = 'https://pixabay.com/api/';
-export function getPictures (query, page) {
-  return axios.get(`?image_type=photo&orientation=horizontal&q=${query}&page=${page}&per_page=12&key=${MY_KEY}`)
+export default function getPictures (imageType, imageOrientation, imagesPerPage, query, page) {
+  return axios.get(`?image_type=${imageType}&orientation=${imageOrientation}&q=${query}&page=${page}&per_page=${imagesPerPage}&key=${MY_KEY}`)
 }
 
 // URL-строка запроса:
